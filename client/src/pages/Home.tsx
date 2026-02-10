@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Carousel from "@/components/Carousel";
+import Carousel, { CarouselItem } from "@/components/Carousel";
 import {
   CheckCircle2,
   Settings,
@@ -16,36 +16,46 @@ import {
   Star,
 } from "lucide-react";
 
-const carouselItems = [
+const carouselItems: CarouselItem[] = [
   {
     type: "video" as const,
     src: "/WhatsAppVideo2025-11-21at12.46.34.mp4",
-    alt: "Vídeo 2",
+    alt: "Gestão Inteligente da Informação",
+    title: "GESTÃO DE DOCUMENTOS INTELIGENTE",
+    description: "Gerencie suas informações, sejam documentos físicos ou eletrônicos, de forma a permitir sua preservação e recuperação imediata.",
+    ctaText: "Saiba Mais"
   },
   {
     type: "image" as const,
     src: "/site_2_gestao_processos.png",
     alt: "Gestão de Processos",
+    title: "GESTÃO DE PROCESSOS (WORKFLOWS)",
+    description: "Automatize e gerencie cada etapa de seus processos, mantenha registros das operações, identifique gargalos e ganhe produtividade.",
+    ctaText: "Ver Detalhes"
   },
-  // {
-  //   type: "video" as const,
-  //   src: "/WhatsAppVideo2025-11-21at12.46.47.mp4",
-  //   alt: "Vídeo 1",
-  // },
   {
     type: "image" as const,
     src: "/site_3_gestao_contratos.png",
     alt: "Gestão de Contratos",
+    title: "GESTÃO DE CONTRATOS",
+    description: "Colete assinaturas (eSignature), gerencie e armazene seus contratos, permitindo controlar seu ciclo de vida.",
+    ctaText: "Saiba Mais"
   },
   {
     type: "image" as const,
     src: "/site_4_automacao_processos.png",
     alt: "Automação de Processos",
+    title: "AUTOMAÇÃO DE PROCESSOS COM IA",
+    description: "Automatize processos de indexação de documentos, OCR, assinatura digital e a coleta de informações para criação de uma base de conhecimento corporativa.",
+    ctaText: "Explorar"
   },
   {
     type: "image" as const,
     src: "/site_5_analise_informacoes.png",
     alt: "Análise de Informações",
+    title: "ANALISE SUAS INFORMAÇÕES COM IA",
+    description: "Tenha insights, localize informações em documentos, sumarize informações e gerencie métricas dos processos e acervo.",
+    ctaText: "Começar agora"
   },
 ];
 
